@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+
+    <section>
+
+      <main>
+
+    <h1>Coin flip game choose heads or tails</h1>
+
+    <button id="heads" type="button" name="button">Heads</button>
+
+    <button id="tails" type="button" name="button">Tails</button>
+
+
+    <p id="win" ></p>
+
+    <h3>Player Total is : <span id="playerCount"></span></h3>
+
+    <h3>Computer Total is: <span id="computerCount"></span></h3>
+
+    </main>
+
+  </section>
+
+    <script>
+
+      let player = "player"
+
+      let computer = "computer"
+
+      let computerCount = 0
+
+      let playerCount = 0
+
+      let heads = document.getElementById("heads")
+
+      let tails = document.getElementById("tails")
+
+      let playerDisplay = document.getElementById("playerCount")
+
+      let computerDisplay = document.getElementById("computerCount")
+
+      function flip(){
+
+        let playerChoice = this.textContent
+
+        console.log(playerChoice);
+
+        if(playerChoice == "Heads"){
+
+          player = "heads"
+
+          computer = "tails"
+
+          console.log("Player chooses heads", player, computer);
+
+        }else if(playerChoice == "Tails"){
+
+          player = "tails"
+
+          computer = "heads"
+
+          console.log("Player chooses tails", player, computer);
+
+        }
+
+          let result = Math.random()
+
+            if (result <= 0.5){
+
+              if(player == "heads"){
+
+                document.getElementById("win").innerText = "Player Wins!"
+
+                playerCount += 5
+
+                playerDisplay.innerText = playerCount
+
+                console.log("player total: ", playerCount);
+
+              } else{
+
+                document.getElementById("win").innerText = "Computer Wins!"
+
+                computerCount += 5
+
+                computerDisplay.innerText = computerCount
+
+                console.log("computer total:", computerCount);
+
+              }
+
+
+
+
+
+          }else if (result > 0.5){
+
+            if(player == "tails"){
+
+              document.getElementById("win").innerText = "Player Wins!"
+
+              playerCount += 5
+
+              playerDisplay.innerText = playerCount
+
+              console.log("player total: ", playerCount);
+
+            } else{
+
+              document.getElementById("win").innerText = "Computer Wins!"
+
+              computerCount += 5
+
+              computerDisplay.innerText = computerCount
+
+              console.log("computer total:", computerCount);
+
+            }
+
+
+          }
+          console.log(result)
+
+      }
+
+      heads.addEventListener('click', flip)
+
+      tails.addEventListener('click', flip)
+
+
+
+    </script>
+
+  </body>
+</html>
