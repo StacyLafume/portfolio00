@@ -1,0 +1,117 @@
+.btn-primary {
+    background-color: #2d323393!important;
+    border-color: #fafafa4f!important;
+    color: #fff!important;
+}
+
+.btn-xl {
+    padding: .75rem 1.75rem;
+}
+.btn-primary:hover {
+    background-color: #000000ee!important;
+    border-color: #fafafa9f!important;
+    color: #fff!important;
+}
+#sidebar-wrapper {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transition: all .4s ease 0s;
+    transform: translateX(250px);
+    background-color: #2d3233!important;
+    border-left: 1px solid rgba(255,255,255,.1);
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.bg-primary {
+    background-color: #f4be67!important;
+}
+.service-icon {
+    background-color: #fff;
+    color: black;
+    height: 7rem;
+    width: 7rem;
+    display: block;
+    line-height: 7.5rem;
+    font-size: 2.25rem;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+.bg-primary {
+    background-color: #f4be67!important;
+}
+.btn-dark {
+    color: #fff;
+    background-color: #0c0e0f69;
+    border-color: #fdfeff;
+}
+
+.text-white {
+    color: #000!important;
+}
+.text-faded {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.callout {
+    padding: 15rem 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/greyCover2.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .portfolio-item .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.384);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+footer.footer .social-link {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    background-color: #f4be67!important;
+    transition: background-color .15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+
+@media (min-width: 992px){
+.portfolio-item .caption .caption-content {
+    transition: opacity .25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+}
+
+} 
+
+ @media (min-width: 992px){
+.portfolio-item .caption .caption-content {
+    transition: opacity .25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 0rem;
+}
+}
+.portfolio-item .caption .caption-content {
+    color: #fff;
+    margin: auto 2rem 0rem;
+}
+
+.portfolio-item:hover .caption {
+    background-color: #f4be670c!important;
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+}
