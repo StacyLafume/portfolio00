@@ -1,7 +1,13 @@
+
 .btn-primary {
     background-color: #2d323393!important;
     border-color: #fafafa4f!important;
     color: #fff!important;
+}
+
+.btn {
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+    font-weight: 400;
 }
 
 .btn-xl {
@@ -25,7 +31,7 @@
 }
 
 .lead {
-    font-size: 1.25rem;
+    font-size: 1.34rem;
     font-weight: 300;
     text-align: left;
 }
@@ -44,7 +50,11 @@
     box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
 }
 .bg-primary {
-    background-color: #f4be67!important;
+    background-color: #d1b68b!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
 }
 .btn-dark {
     color: #fff;
@@ -61,7 +71,7 @@
 
 .callout {
     padding: 15rem 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/greyCover2.svg");
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/cream.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +121,23 @@ footer.footer .social-link {
 }
 
 .portfolio-item:hover .caption {
-    background-color: #f4be670c!important;
+    background-color: #00000023!important;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
 }
+
+.callout h2 {
+    font-size: 3.5rem;
+    font-weight: 400!important;
+    display: block;
+    max-width: 30rem;
+}
+input {
+    background-color: rgb(209 182 138) !important;
+    border-bottom: 2px, black !important;
+    width: 50%;
+}
+::placeholder {
+    
+ color: black;
+  }
