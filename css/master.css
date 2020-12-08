@@ -136,6 +136,16 @@ input {
     background-color: rgb(209 182 138) !important;
     border-bottom: 2px, black !important;
     width: 50%;
+    
+}
+@media all and (max-width: 500px){
+    input{ 
+      display: none!important;
+        
+    }
+    #button{
+        display: none!important;
+    }
 }
 ::placeholder {
     
